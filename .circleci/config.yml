@@ -9,7 +9,7 @@ jobs:
       - image: cimg/ruby:3.2.2
     steps:
       - browser-tools/install-browser-tools:
-          chromedriver-version: 118.0.5972.0 
+          chrome-version: 118.0.5972.0 
           install-chrome: true 
           install-chromedriver: true 
           install-firefox: false 

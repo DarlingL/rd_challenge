@@ -1,0 +1,8 @@
+[caps]
+    platformName = "iOS"
+    platformVersion = ""
+    deviceName = ""
+    app = ""
+    allowTouchIdEnroll = true
+    autoDismissAlerts = true
+    automationName = "XCUITest"

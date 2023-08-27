@@ -1,0 +1,333 @@
+[
+  {
+    "id": "desafio",
+    "uri": "features/desafio_app.feature",
+    "keyword": "Funcionalidade",
+    "name": "Desafio",
+    "description": "Realizar os cenários do Desafio",
+    "line": 5,
+    "elements": [
+      {
+        "keyword": "Contexto",
+        "name": "",
+        "description": "",
+        "line": 9,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "estar na tela inicial da aplicação",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/cadastro_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 464689000
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5160301000
+            }
+          }
+        ]
+      },
+      {
+        "id": "desafio;criar-um-cadastro",
+        "keyword": "Cenário",
+        "name": "Criar um cadastro",
+        "description": "",
+        "line": 13,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que iniciei um novo cadastro",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/cadastro_steps.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1286620000
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "preencher as informações",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/cadastro_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4446276000
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "registrar",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/cadastro_steps.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 566819000
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "cadastro deve ser confirmado",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/cadastro_steps.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 210794000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@android",
+            "line": 12
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 401818000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Contexto",
+        "name": "",
+        "description": "",
+        "line": 9,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "estar na tela inicial da aplicação",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/cadastro_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39681000
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4874047000
+            }
+          }
+        ]
+      },
+      {
+        "id": "desafio;realize-o-login-com-o-novo-cadastro-e-valide-se-houve-sucesso",
+        "keyword": "Cenário",
+        "name": "Realize o login com o novo cadastro e valide se houve sucesso",
+        "description": "",
+        "line": 20,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que realize um novo cadastro",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6188355000
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "selecionar a opção de logar",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 437813000
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "preencher login com cadastro recém criado",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2323512000
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "realizar o login",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 584069000
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "devo estar na home da aplicação",
+            "line": 25,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1119892000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@android",
+            "line": 19
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 301371000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Contexto",
+        "name": "",
+        "description": "",
+        "line": 9,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "estar na tela inicial da aplicação",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/cadastro_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 966138000
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4980783000
+            }
+          }
+        ]
+      },
+      {
+        "id": "desafio;realize-o-login-com-um-cadastro-inexistente-e-valide-o-retorno-exibido",
+        "keyword": "Cenário",
+        "name": "Realize o login com um cadastro inexistente e valide o retorno exibido",
+        "description": "",
+        "line": 28,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "preencher login com credenciais \"inválidas\"",
+            "line": 29,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1158462000
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "realizar o login",
+            "line": 30,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 590646000
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "deve retornar erro no login",
+            "line": 31,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 224616000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@android",
+            "line": 27
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 259579000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

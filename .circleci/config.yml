@@ -1,0 +1,30 @@
+version: '2.1'
+orbs:
+  browser-tools: circleci/browser-tools@1.4.1
+jobs:
+  working_directory: ~/repo
+  testes:
+    docker:
+      # replace with your preferred image
+      - image: cimg/ruby:2.7.6
+    steps:
+      - browser-tools/install-browser-tools:
+          install-chrome: true 
+          install-chromedriver: true 
+          install-firefox: false 
+          install-geckodriver: false 
+      - checkout
+      - run:
+          name: install bundler
+          command: "sudo gem install bundler"
+      - run:
+          name: install-dependencies
+          command: "sudo bundle install"
+      - run:
+          name:  Run Web Tests Capybara
+          command: "cd Web && cucumber" 
+
+workflows:
+  integration_ci:
+    jobs:
+      -   testes

@@ -29,7 +29,8 @@ Para uma execução com report, execute:
 cucumber --publish
 ```
 
-Execução atual está para o modo headless, para voltar ao modo comum, altere o driver do Capybara no arquivo 'Web/features/support/env.rb', substitua por isso:
+Execução atual está para o modo headless !
+Para voltar ao modo comum, altere o driver do Capybara no arquivo 'Web/features/support/env.rb' substitua por isso:
 
 ```shell
 Capybara.register_driver :selenium do |app|

@@ -1,5 +1,7 @@
 # rd_challenge
 
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/DarlingL/rd_challenge/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/DarlingL/rd_challenge/tree/main)
+
 ## Para Iniciar ##
 
 
@@ -25,6 +27,16 @@ cucumber
 Para uma execução com report, execute:
 ```shell
 cucumber --publish
+```
+
+Execução atual está para o modo headless, para voltar ao modo comum, altere o driver do Capybara no arquivo 'Web/features/support/env.rb', substitua por isso:
+
+```shell
+Capybara.register_driver :selenium do |app|
+  Capybara::Selenium::Driver.new(app,
+  :browser => :chrome
+)
+end
 ```
 
 ### Obs: Automação Web ###

@@ -6,10 +6,9 @@ jobs:
   testes:
     docker:
       # replace with your preferred image
-      - image: cimg/ruby:2.7.6
+      - image: cimg/ruby:3.2.2
     steps:
       - browser-tools/install-browser-tools:
-          chrome-version: 114.0.5735.91 
           install-chrome: true 
           install-chromedriver: true 
           install-firefox: false 
